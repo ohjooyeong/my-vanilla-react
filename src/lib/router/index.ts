@@ -52,13 +52,15 @@ const spaRouter = () => {
           );
         }
       }
-      return { Comment: errorComponent, params: undefined };
+
+      return { Component: errorComponent, params: undefined };
     }
     return traverse(routes, segments);
   };
 
   const loadRouteComponent = (path: string) => {
     const { Component, params } = matchUrlToRoute(routeInfo.routes ?? [], path);
+
     if (!Component) {
       throw new Error("no matching component error");
     } else {
