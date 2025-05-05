@@ -6,8 +6,8 @@ const HomePage = () => {
         go post
       </a>
       &nbsp;&nbsp;
-      <a data-link href="/blog">
-        go blog
+      <a data-link href="/insang">
+        go insang
       </a>
     </div>
   );

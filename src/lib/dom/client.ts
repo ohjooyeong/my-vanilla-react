@@ -2,7 +2,7 @@ import { VNode } from "@/lib/jsx/jsx-runtime/type";
 
 // Virtual DOM을 DOM에 올리기(Vitual DOM -> DOM)
 const createElement = (node: VNode) => {
-  //node가 null 또는 undefined인 경우 빈 DocumentFragment를 반환합니다.
+  // node가 null 또는 undefined인 경우 빈 DocumentFragment를 반환합니다.
   if (node === null || node === undefined) {
     return document.createDocumentFragment();
   }
